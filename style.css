@@ -1,0 +1,71 @@
+.page {
+  display: flex;
+  flex-direction: row;
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px;
+  margin: 0;
+  background: url(img/roulette-wheel.jpg);
+  background-size: cover;
+  background-position: 10% 80%;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  margin-right: 20px;
+  min-width: 175px;
+  height: 65px;
+  color: white;
+}
+
+.redbutton {
+  margin-right: 20px;
+  border: 8px ridge red;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: rgb(255, 72, 72);
+  color: white;
+  font-weight: bold;
+}
+
+.blackbutton {
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border: 8px ridge rgb(26, 26, 26);
+  margin-right: 20px;
+  background-color: rgb(37, 37, 37);
+}
+
+.incbutton {
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border: 8px ridge #ffd700;
+  margin-right: 20px;
+  background-color: #daa520;
+}
+
+.input {
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 8px ridge #ffffff;
+  background-color: #cacaca;
+}
