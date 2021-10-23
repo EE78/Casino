@@ -6,12 +6,25 @@
   <link rel="stylesheet" href="style.css">
   <title>Roulette</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
 </head>
 
 <body class="page">
+  <header>
+    <div class="author" id="author">
+      <p id="name"></p>
+      <p id="email"></p>
+      <p id="cash"></p>
+      <div></div>
+    </div>
+    <img id="avatar" class="avatar"></img>
+    <div>
+      <button id="login" class="login-button">LOG IN</button>
+    </div>
+  </header>
   <main>
+    <!-- <p class="warning-text" id="warning"></p> -->
     <p class="balance" id="balance">YOUR BALANCE: </p>
     <input class="input" type="number" placeholder="YOUR BET" id="bet">
 
@@ -23,7 +36,7 @@
 
     <p id="message">YOUR RESULT: </p>
   </main>
-  
+
   <script src="roulette.js"></script>
 </body>
 
