@@ -1,7 +1,7 @@
 const USER = {
-  avatar: " ",
-  name: " ",
-  email: " ",
+  avatar: "",
+  name: "",
+  email: "",
   login: function () {
     this.isAuth = true;
     (this.avatar =
@@ -11,9 +11,9 @@ const USER = {
   },
   logout: function () {
     this.isAuth = false;
-    this.avatar = " ";
-    this.name = " ";
-    this.email = " ";
+    this.avatar = "";
+    this.name = "";
+    this.email = "";
   },
   balance: 200,
   isAuth: false,
@@ -30,7 +30,7 @@ function handleAuth() {
   } else {
     USER.logout();
     displayUser();
-    document.getElementById("cash").innerHTML = ""
+    document.getElementById("cash").innerHTML = "";
     document.getElementById("login").innerText = "LOG IN";
   }
 }
