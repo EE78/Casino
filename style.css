@@ -1,45 +1,120 @@
-.page {
+body {
   width: auto;
   display: flex;
-  background: url(img/roulette-wheel.jpg);
+  flex-direction: column;
+  background: url(img/roulette-wheel.jpg) no-repeat;
   background-size: cover;
   background-position: 10% 80%;
-  justify-content: flex-end;
-  padding-right: 50px;
+  margin: 0;
 }
 
 * {
-  font-family: "Zen Kurenaido", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: white;
 }
 
 header {
+width: 100%;
+height: 110px;
+background-color: #FDFDFD;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+ul{
+  
+list-style: none;
+}
+
+li {
+  color: black;
+}
+
+
+.header-left {
+display: flex;
+align-items: center;
+height: 63px;
+width: 246px;
+}
+
+.header-left-text {
+  margin-left: 23px;
+}
+
+#name {
+  padding-bottom: 5px;
+}
+
+#email {
+  opacity: 0.5;
+}
+
+#avatar {
+  width: 63px;
+  height: 63px;
+  border: 2px solid rgba(252, 199, 61, 0.37);
+  border-radius: 50%;
+  margin: 23px 0px 23px 71px;
+ 
+} 
+
+.header-center {
   display: flex;
-  height: 100px;
   align-items: center;
 }
 
+#cash {
+  color: black;
+font-weight: 700;
+font-size: 36px;
+margin-right: 12px;
+}
+
+.circle {
+width: 37px;
+height: 37px;
+background-color: 
+#FCC73D;
+border-radius: 50%;
+text-align: center;
+
+}
+
+.circle-text {
+  color: black;
+ font-size: 24px;
+ padding-top: 5px;
+}
+
+.header-right {
+  display: flex;
+align-items: center;
+height: 63px;
+width: 246px;
+}
+
 .login-button {
-  border: 8px ridge silver;
-  border-radius: 25px;
-  background-color: rgb(94, 94, 94);
+  width: 133px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: 
+  #8CF27B;
+  color: black;
+  margin: 33px 71px 33px 0px;
 }
 
-.author {
-  text-align: center;
-}
 
-.avatar {
-  border-radius: 25px;
-}
+
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 500px;
 }
 
 .buttons {
@@ -73,3 +148,12 @@ main {
   color: black;
   font-weight: bold;
 }
+
+/* @media all and (min-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+  
+}  */

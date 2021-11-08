@@ -3,39 +3,54 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
+  scalable=yes">
   <link rel="stylesheet" href="style.css">
   <title>Roulette</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
+<body>
   <header>
-    <img id="avatar" class="avatar"></img>
-    <div class="author" id="author">
-      <p id="name"></p>
-      <p id="email"></p>
-      <p id="cash"></p>
-    </div>
+
     <div>
+      <ul class="header-left">
+        <li><img id="avatar"></img></li>
+
+        <div class="header-left-text">
+          <li id="name"></li>
+          <li id="email"></li>
+        </div>
+        
+      </ul>
+    </div>
+
+    <div  >
+      <ul class="header-center">
+      <li id="cash"> </li>
+      <li class="circle circle-text">R </li>
+    </ul>
+    </div>
+
+    <div class="header-right">
       <button id="login" class="login-button">Log in</button>
     </div>
-  </header>
-  <main>
-  
-    
-    <input class="input" type="number" placeholder="Your bet" id="bet">
 
+  </header>
+
+
+  <main>
+    <input class="input" type="number" placeholder="Your bet" id="bet">
     <div class="buttons">
-      <button class="redbutton" id="placebet-red">Bet on red</button>
       <button class="blackbutton" id="placebet-black">Bet on black</button>
       <button class="incbutton" id="deposit">Top op your balance</button>
+      <button class="redbutton" id="placebet-red">Bet on red</button>
     </div>
-
     <p id="message"> </p>
   </main>
-
   <script src="roulette.js"></script>
 </body>
 
