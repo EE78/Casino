@@ -2,42 +2,41 @@ body {
   width: auto;
   display: flex;
   flex-direction: column;
-  background: url(img/roulette-wheel.jpg) no-repeat;
-  background-size: cover;
-  background-position: 10% 80%;
   margin: 0;
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: white;
 }
 
 header {
-width: 100%;
-height: 110px;
-background-color: #FDFDFD;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 110px;
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 34px 71px 34px 71px;
+  position: relative;
 }
 
-ul{
-  
-list-style: none;
+ul {
+  list-style: none;
 }
 
 li {
   color: black;
 }
 
-
 .header-left {
-display: flex;
-align-items: center;
-height: 63px;
-width: 246px;
+  display: flex;
+  align-items: center;
+  height: 63px;
+  width: 246px;
 }
 
 .header-left-text {
@@ -57,64 +56,115 @@ width: 246px;
   height: 63px;
   border: 2px solid rgba(252, 199, 61, 0.37);
   border-radius: 50%;
-  margin: 23px 0px 23px 71px;
- 
-} 
+}
 
 .header-center {
+  height: 45px;
+
   display: flex;
+
   align-items: center;
+  position: relative;
 }
 
 #cash {
   color: black;
-font-weight: 700;
-font-size: 36px;
-margin-right: 12px;
+  font-weight: 700;
+  font-size: 36px;
+  height: 42px;
+
+  position: absolute;
+  z-index: 7;
 }
 
-.circle {
-width: 37px;
-height: 37px;
-background-color: 
-#FCC73D;
-border-radius: 50%;
-text-align: center;
-
+.circles {
+  display: flex;
+  align-items: center;
 }
 
-.circle-text {
+.zero-circle {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
   color: black;
- font-size: 24px;
- padding-top: 5px;
+  z-index: 6;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-circle {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: #fcc73d;
+  border-radius: 50%;
+  z-index: 5;
+  left: 50px;
+}
+
+.second-circle {
+  position: absolute;
+  left: 52.5px;
+  top: 5px;
+  width: 37px;
+  height: 37px;
+  background-color: #fcc73d;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 4;
+}
+
+.third-circle {
+  position: absolute;
+  left: 55px;
+  top: 7.5px;
+  width: 37px;
+  height: 37px;
+  background-color: #fcc73d;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 3;
 }
 
 .header-right {
   display: flex;
-align-items: center;
-height: 63px;
-width: 246px;
+  align-items: center;
+  height: 63px;
+  width: 246px;
+  justify-content: center;
 }
 
 .login-button {
   width: 133px;
   height: 44px;
   border-radius: 6px;
-  background-color: 
-  #8CF27B;
+  background-color: #8cf27b;
   color: black;
-  margin: 33px 71px 33px 0px;
+  padding: 12px 36px 12px 36px;
+  border: none;
 }
 
-
-
-
 main {
+  margin: 39px 71px 39px 71px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 500px;
+  height: 436px;
+  background: url(img/wrb.jpg) no-repeat;
+  background-size: cover;
+  background-position: 15% 40%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons {
@@ -147,6 +197,16 @@ main {
   text-align: center;
   color: black;
   font-weight: bold;
+}
+
+.main-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#message {
+  font-size: 24px;
+  color: black;
 }
 
 /* @media all and (min-width: 320px) {

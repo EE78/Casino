@@ -1,8 +1,8 @@
 const USER = {
-  avatar: "",
-  name: "",
-  email: "",
-  balance: "",
+  avatar: " ",
+  name: " ",
+  email: " ",
+  balance: " ",
   login: function () {
     this.isAuth = true;
 
@@ -15,10 +15,10 @@ const USER = {
   logout: function () {
     this.isAuth = false;
 
-    this.avatar = "";
-    this.name = "";
-    this.email = "";
-    this.balance = "";
+    this.avatar = " ";
+    this.name = " ";
+    this.email = " ";
+    this.balance = " ";
   },
   isAuth: false,
 };
@@ -29,16 +29,14 @@ function handleAuth() {
   if (USER.isAuth === false) {
     USER.login();
     displayUser();
-    document.getElementById("login").innerText = "Log out";
-    this.style.backgroundColor ="#FF5E5E";
-    ;
-    
+    document.getElementById("login").innerText = "Выйти";
+    this.style.backgroundColor = "#FF5E5E";
+    document.getElementById("message").innerHTML = "";
   } else {
     USER.logout();
     displayUser();
-    document.getElementById("login").innerText = "Log in"
-    this.style.backgroundColor ="#8CF27B";;
-    document.getElementById("circle").innerText = "";
+    document.getElementById("login").innerText = "Войти";
+    this.style.backgroundColor = "#8CF27B";
   }
 }
 
@@ -54,8 +52,6 @@ document
   .getElementById("placebet-black")
   .addEventListener("click", onClickBlack);
 document.getElementById("deposit").addEventListener("click", onClickDeposit);
-
-
 
 function onClickRed() {
   onClick("red");

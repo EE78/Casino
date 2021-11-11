@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
-  scalable=yes">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
   <link rel="stylesheet" href="style.css">
   <title>Roulette</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,32 +23,39 @@
           <li id="name"></li>
           <li id="email"></li>
         </div>
-        
+
       </ul>
     </div>
 
-    <div  >
-      <ul class="header-center">
-      <li id="cash"> </li>
-      <li class="circle circle-text">R </li>
-    </ul>
+    <div class="header-center">
+      <div id="cash"> </div>
+      <div class="circles">
+        <div class="zero-circle">R</div>
+        <div class="first-circle"></div>
+        <div class="second-circle"></div>
+        <div class="third-circle"></div>
+      </div>
     </div>
 
     <div class="header-right">
-      <button id="login" class="login-button">Log in</button>
+      <button id="login" class="login-button">Войти</button>
     </div>
 
   </header>
 
 
   <main>
-    <input class="input" type="number" placeholder="Your bet" id="bet">
-    <div class="buttons">
-      <button class="blackbutton" id="placebet-black">Bet on black</button>
-      <button class="incbutton" id="deposit">Top op your balance</button>
-      <button class="redbutton" id="placebet-red">Bet on red</button>
+    <div class="main-content">
+      <div class="main-message">
+        <p id="message"> </p>
+      </div>
+      <input class="input" type="number" placeholder="Your bet" id="bet">
+      <div class="buttons">
+        <button class="blackbutton" id="placebet-black">Bet on black</button>
+        <button class="incbutton" id="deposit">Top op your balance</button>
+        <button class="redbutton" id="placebet-red">Bet on red</button>
+      </div>
     </div>
-    <p id="message"> </p>
   </main>
   <script src="roulette.js"></script>
 </body>
