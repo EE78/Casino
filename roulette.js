@@ -27,16 +27,19 @@ document.getElementById("login").addEventListener("click", handleAuth);
 
 function handleAuth() {
   if (USER.isAuth === false) {
+    // document.getElementById("avatar").remove();
     USER.login();
     displayUser();
     document.getElementById("login").innerText = "Выйти";
     this.style.backgroundColor = "#FF5E5E";
     document.getElementById("message").innerHTML = "";
+   
   } else {
     USER.logout();
     displayUser();
     document.getElementById("login").innerText = "Войти";
     this.style.backgroundColor = "#8CF27B";
+    // document.getElementById("avatar").remove();
   }
 }
 

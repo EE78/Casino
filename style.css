@@ -8,19 +8,19 @@ body {
 * {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: white;
+  
+  box-sizing: border-box;
 }
 
 header {
-  box-sizing: border-box;
   width: 100%;
   height: 110px;
   background-color: #fdfdfd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 62px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  padding: 34px 71px 34px 71px;
+  padding: 24px 71px 24px 71px;
   position: relative;
 }
 
@@ -35,8 +35,7 @@ li {
 .header-left {
   display: flex;
   align-items: center;
-  height: 63px;
-  width: 246px;
+  padding: 0;
 }
 
 .header-left-text {
@@ -59,27 +58,33 @@ li {
 }
 
 .header-center {
-  height: 45px;
-
+ 
+  width: 100%;
+  height: 100%;
   display: flex;
-
+  justify-content: center;
   align-items: center;
-  position: relative;
+  
+}
+
+.cash-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 #cash {
   color: black;
   font-weight: 700;
   font-size: 36px;
-  height: 42px;
-
-  position: absolute;
+  margin-right: 12px;
   z-index: 7;
 }
 
 .circles {
-  display: flex;
-  align-items: center;
+  
+  position: relative;
+    width: 37px;
+    height: 37px;
 }
 
 .zero-circle {
@@ -91,7 +96,6 @@ li {
   font-size: 24px;
   color: black;
   z-index: 6;
-  left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,12 +108,14 @@ li {
   background-color: #fcc73d;
   border-radius: 50%;
   z-index: 5;
-  left: 50px;
+  top: 0;
+    left: 0;
 }
+
 
 .second-circle {
   position: absolute;
-  left: 52.5px;
+  left: 2.5px;
   top: 5px;
   width: 37px;
   height: 37px;
@@ -121,7 +127,7 @@ li {
 
 .third-circle {
   position: absolute;
-  left: 55px;
+  left: 5px;
   top: 7.5px;
   width: 37px;
   height: 37px;
@@ -134,9 +140,8 @@ li {
 .header-right {
   display: flex;
   align-items: center;
-  height: 63px;
-  width: 246px;
-  justify-content: center;
+  
+  justify-content: flex-end;
 }
 
 .login-button {
@@ -204,6 +209,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 #message {
   font-size: 24px;
   color: black;
