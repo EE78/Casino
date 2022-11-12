@@ -12,3 +12,4 @@ yarn start
 # Или // Or
 
 Вы можете запустить gh-pages // You can run gh-pages
+ee78.github.io/CasinoRoulette/
