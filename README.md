@@ -1,16 +1,8 @@
-# Рулетка в казино на JavaScript // CasinoRoulette using JavaScript
-JavaScript Casino Roulette
+# Рулетка в казино на JavaScript 
 
-# Установка // Setup
+## Идея
+Было желание сделать подобие рулетки в казино. 
 
-git clone https://github.com/EE78/CasinoRoulette/
+## Технологии
 
-# Запуск // Launch
-
-yarn start
-
-# Или // Or
-
-Вы можете запустить gh-pages // You can run gh-pages
-
-https://ee78.github.io/CasinoRoulette/
+JavaScript, HTML, CSS
